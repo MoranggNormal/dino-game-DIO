@@ -1,0 +1,145 @@
+@font-face {
+	font-family:Titulo;
+	src:url(fonte/Basketball.otf);
+}
+
+body{
+    background: #fafafa;
+    overflow: hidden;
+}
+
+.dino{
+    height: 51px;
+    width: 44px;
+    background-image: url(img/dino2.png);
+    position: absolute;
+    left: 50px;
+    bottom: 0px;
+    
+}
+
+.dino{
+    background-image: url(img/dino2.png);
+    animation:play .3s steps(2) infinite ;
+    -webkit-animation: play .3s steps(2) infinite;
+}
+
+@keyframes play {
+	from {background-position: 0px;}
+	to {background-position: -87px;}
+}
+
+.cactus{
+    height:60px;
+    width: 60px;
+    background-image: url(img/cactus.png);
+    position: absolute;
+    bottom: 0px;
+    left: 1400px;
+    
+}
+
+.score{
+    margin-top: 100px;
+    text-align: center;
+    font-family: Titulo;
+    font-size: 70px;
+    color: #666666;
+}
+.bird{
+    height:60px;
+    width: 47px;
+    background-image: url(img/passaro.png);
+    position: absolute;
+    bottom: 10px;
+    left: 1400px;
+}
+
+.bird{
+    background-image: url(img/passaro.png);
+    animation:play2 .9000s steps(2) infinite ;
+    -webkit-animation: play .9000s steps(2) infinite;
+}
+
+@keyframes play2 {
+	from {background-position: 0px;}
+	to {background-position: -90px;}
+}
+
+.dinoRex{
+    height: 51px;
+    width: 63px;
+    background-image: url(img/dino-rex.png);
+    position: absolute;
+    left: 1400px;
+    bottom: 0px;
+    
+}
+
+.dinoRex{
+    background-image: url(img/dino-rex.png);
+    animation:play3 .3s steps(2) infinite ;
+    -webkit-animation: play3 .3s steps(2) infinite;
+}
+
+@keyframes play3 {
+	from {background-position: 0px;}
+	to {background-position: -121px;}
+}
+
+.game-over{
+    text-align: center;
+    color: #666666;
+    margin-top: 200px;
+    font-family:Titulo;
+    font-size: 110px;
+}
+
+@keyframes slideright{
+    from{
+        background-position: 20000%;
+    }
+    to{
+        background-position: 0;
+    }
+}
+
+.background{
+    position: absolute;
+    bottom: 0;
+    background-image: url(img/background.png);
+    background-repeat: repat-x;
+    animation: slideright 600s infinite linear;
+    width: 100%;
+    height: 200px;
+}
+
+.over-score{
+    text-align: center;
+    color: #666666;
+    margin-top: -85px;
+    font-family:Titulo;
+    font-size: 50px;
+}
+
+.instrucao{
+    text-align: center;
+    margin-top: 130px;
+    margin-bottom: -90px;
+    color: #666666;
+    font-family:Titulo;
+    font-size: 100px;
+}
+
+@keyframes instrucao {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 0; }
+}
+.instrucao {
+  -webkit-animation: instrucao .75s linear infinite;
+  -moz-animation: instrucao .75s linear infinite;
+  -ms-animation: instrucao .75s linear infinite;
+  -o-animation: instrucao .75s linear infinite;
+  animation: instrucao .75s linear infinite;
+}
